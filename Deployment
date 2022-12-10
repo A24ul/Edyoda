@@ -1,0 +1,5 @@
+The steps needed to update a container's image using deployment, making sure that there is zero downtime.
+We need to change the replicaSet number in deployment as it overwrites replicaset
+
+
+kubectl scale deploy (pod_name) --replicas=3 (any number you want)
