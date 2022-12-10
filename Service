@@ -1,0 +1,5 @@
+Verify that you are accessing the service's cluster IP from within the cluster and not from the outside.
+Make sure your readiness probe is working if you defined one; otherwise, the pod won't be included in the service.
+Using kubectl get endpoints, you can check the corresponding Endpoints object to see if a pod is a member of the service.
+Verify that you are connecting to the service's exposed port and not the target port.
+To make sure your pod is allowing connections on the right port, try connecting directly to the pod IP.
